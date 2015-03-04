@@ -9,7 +9,7 @@ offline_wan_option_string="@offline_wan_icon"
 route_to_ping_string="@route_to_ping"
 
 online_wan_icon_osx="ⓦ "
-online_wan_icon="WAN IP "
+online_wan_icon="WAN: "
 offline_wan_icon_osx="⨂ "
 offline_wan_icon="NO INERNET ACCESS "
 route_to_ping_default="www.google.com"
