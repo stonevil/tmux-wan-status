@@ -7,6 +7,7 @@ source "$CURRENT_DIR/helpers.sh"
 online_wan_option_string="@online_wan_icon"
 offline_wan_option_string="@offline_wan_icon"
 route_to_ping_string="@route_to_ping"
+route_to_ip_string="@route_to_ip"
 
 online_wan_icon_osx="ⓦ "
 online_wan_icon="WAN: "
@@ -35,7 +36,7 @@ online_wan_status() {
 }
 
 ip_wan_status() {
-  curl --max-time 2 -s http://whatismyip.akamai.com/
+    curl --max-time 2 -s $(get_tmux_option "$route_to_ip_string" "$route_to_ip_default")
 }
 
 print_wan_status() {
